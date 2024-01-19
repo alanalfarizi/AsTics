@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("./img/bg.png");
+    color: #e1e1f1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Outfit', sans-serif;
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    gap: 1rem;
+}
+
+.my-logo {
+    width: 10rem;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    box-shadow: rgba(254, 254, 255, 0.1) 0px 7px 29px 0px;
+}
+
+h1 {
+    margin-top: 2rem;
+    font-size: 3.5rem;
+    margin-bottom: .5rem;
+}
+
+a  {
+    text-decoration: none;
+    color: inherit;
+}
+
+.sosmed i {
+    font-size: 1.5rem;
+    color: #8787a3;
+}
+
+.sosmed {
+    display: flex;
+    margin-top: 1rem;
+}
+
+.sosmed-link {
+    position: relative;
+    margin-right: 10px; /* Sesuaikan jarak antar ikon sesuai kebutuhan */
+}
+
+.sosmed-text {
+    display: none;
+    position: absolute;
+    top: -25px; /* Sesuaikan dengan posisi yang diinginkan */
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    padding: 1px;
+}
+
+.sosmed-link:hover .sosmed-text {
+    display: block;
+}
+
+.sosmed i:hover {
+    color: white;
+}
+
+
+.sosmed a:not(:last-child) {
+    margin-right: 1rem;
+}
+
+.links h3:not(:last-child) {
+    margin-top: 2rem;
+}
+
+ul {
+    width: 80%;
+    max-width: 40rem;
+}
+
+ul li {
+    list-style: none;
+}
+
+ul h3 {
+    text-align: center;
+    margin-bottom: .5rem;
+    font-size: 2rem;
+}
+
+ul.links li:not(:last-child) {
+    margin-bottom: 1rem;
+}
+
+.link-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2d2d56;
+    padding: 1rem;
+    border-radius: 20px;
+    box-shadow: 8px 10px 0 #0f0f25;
+    border: 2px solid #2d2d56;
+}
+
+.link-card:hover {
+    border: 2px solid white;
+}
+
+/* Game Store */
+
+.links .instagram-store {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .facebook {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* SA-MP */
+
+.links .directionplay {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .discord-drl {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Personal */
+
+.links .instagram-pers {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .twitter {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .tiktok {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .github {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .eternal-projekt {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .saweria {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .website {
+    width: 3rem;
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.links .link-text {
+    font-size: 1.5rem;
+}
+
+.links .link-icon i {
+    color: white;
+}
+
+.link-action {
+    color: #8787a3;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.copyright {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    color: #8787a3;
+    font-size: .75rem;
+}
+
+.copyright img {
+    width: 2rem;
+    opacity: 0.4;
+}
+
+#toast {
+    width: max-content;
+    position: fixed;
+    top: 0;
+}
+
+.toast-container {
+    background-color: white;
+    color: #0f0f25;
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 1rem;
+    animation: muncul 300 ease-in-out;
+}
+
+.toast-gone {
+    animation: hilang 1s ease-in-out 1s;
+}
+
+@keyframes muncul {
+    from {
+        opacity: 0;
+        transform: translateY(-4rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes hilang {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
